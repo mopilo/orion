@@ -15,6 +15,7 @@ This project is built with expo; to run the project ensure you have the followin
  ## Run
 
   - Clone the project --> git clone  https://github.com/mopilo/orion.git 
+  - Open in VSCode and change directory to orion -->  cd orion 
   - npx expo start
 
     If you are using an emulator/simulator, you may find the following Expo CLI keyboard shortcuts to be useful to open the app on any of the following platforms:
