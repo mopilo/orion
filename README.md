@@ -19,4 +19,7 @@ This project is built with expo; to run the project ensure you have the followin
   If you are using an emulator/simulator, you may find the following Expo CLI keyboard shortcuts to be useful to open the app on any of the following platforms:
 
     Pressing a will open in an Android Emulator or connected device.
-    Pressing i will open in an iOS Simulator.
+    Pressing i will open in an iOS Simulator.![Simulator Screen Shot - iPhone 14 Pro - 2023-10-15 at 22 57 51](https://github.com/mopilo/orion/assets/7842458/0eaf36ac-788c-4cca-9566-2006f2be80ab)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-10-15 at 21 54 35](https://github.com/mopilo/orion/assets/7842458/9374ba20-cc81-4fe7-b039-68baab487e8b)
+![Screenshot_1697407123](https://github.com/mopilo/orion/assets/7842458/08144a76-4918-4817-b851-0a1793503f19)
+![Screenshot_1697403294](https://github.com/mopilo/orion/assets/7842458/68684f89-ad2a-4b01-88e7-1c5bcf48123a)
