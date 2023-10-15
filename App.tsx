@@ -1,8 +1,8 @@
-import { PaperProvider } from 'react-native-paper';
-import BottomTabNav from './src/navigation/BottomTabNav';
-import { NavigationContainer } from '@react-navigation/native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import { PaperProvider } from "react-native-paper";
+import BottomTabNav from "./src/navigation/BottomTabNav";
+import { NavigationContainer } from "@react-navigation/native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 
 export default function App() {
   return (
@@ -17,5 +17,3 @@ export default function App() {
     </PaperProvider>
   );
 }
-
-

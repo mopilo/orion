@@ -2,16 +2,16 @@ import React from "react";
 import { View } from "react-native";
 import { TextInput, Text, useTheme } from "react-native-paper";
 
-
+interface InputComponentProps {
+  wordCount: number;
+  text: string;
+  onTextChange: (text: string) => void;
+}
 export function InputComponent({
   wordCount,
   text,
   onTextChange,
-}: {
-  wordCount: number;
-  text: string;
-  onTextChange: (text: string)=> void
-}) {
+}: InputComponentProps) {
   const theme = useTheme();
   const { colors } = theme;
   return (

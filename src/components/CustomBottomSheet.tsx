@@ -1,34 +1,28 @@
 import { BottomSheetModal } from "@gorhom/bottom-sheet";
 import { BottomSheetModalMethods } from "@gorhom/bottom-sheet/lib/typescript/types";
-import { Pressable, View, ViewStyle } from "react-native";
-import { Searchbar, Text } from "react-native-paper";
+import { ViewStyle } from "react-native";
 
-
-export function CustomBottomSheet({
-  bottomSheetRef,
-  snapPoints,
-  handleSheetChanges,
-  searchQuery,
-  close,
-  onChangeSearch,
-  index,
-  bottomInset,
-  detached,
-  backgroundStyle,
-  children,
-}: {
+interface CustomBottomSheetProps {
   bottomSheetRef: React.RefObject<BottomSheetModalMethods>;
   snapPoints: string[];
   handleSheetChanges: (index: number) => void;
-  searchQuery?: string;
-  close: () => void;
-  onChangeSearch?: () => void;
   index: number;
   bottomInset: number;
   detached: boolean;
   backgroundStyle: ViewStyle;
   children: any;
-}) {
+}
+
+export function CustomBottomSheet({
+  bottomSheetRef,
+  snapPoints,
+  handleSheetChanges,
+  index,
+  bottomInset,
+  detached,
+  backgroundStyle,
+  children,
+}: CustomBottomSheetProps) {
   return (
     <BottomSheetModal
       ref={bottomSheetRef}
@@ -39,9 +33,7 @@ export function CustomBottomSheet({
       onChange={handleSheetChanges}
       detached={detached}
     >
-      
-        {children}
-    
+      {children}
     </BottomSheetModal>
   );
 }

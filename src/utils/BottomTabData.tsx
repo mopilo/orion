@@ -1,5 +1,7 @@
 import PostScreen from "../screens/PostScreen";
-
+{
+  /* an array of navigator items */
+}
 export const BottomTabData = [
   {
     id: 1,
@@ -20,4 +22,3 @@ export const BottomTabData = [
     component: PostScreen,
   },
 ];
-

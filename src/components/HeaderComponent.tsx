@@ -2,19 +2,19 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import { Avatar, IconButton } from "react-native-paper";
 
-
+interface HeaderComponentProps {
+  openCamera: () => void;
+  openLocationBottomSheet: () => void;
+  openFeedBottomSheet: () => void;
+  submit: () => void;
+}
 
 export function HeaderComponent({
   openCamera,
   openLocationBottomSheet,
   openFeedBottomSheet,
   submit,
-}: {
-  openCamera: () => void;
-  openLocationBottomSheet: () => void;
-  openFeedBottomSheet: () => void;
-  submit: () => void;
-}) {
+}: HeaderComponentProps) {
   return (
     <View style={styles.headerStyles}>
       <Avatar.Image size={50} source={require("../../assets/avatar.jpg")} />
@@ -42,11 +42,10 @@ export function HeaderComponent({
   );
 }
 
-
 const styles = StyleSheet.create({
   headerStyles: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginHorizontal: 25,
-  }
+  },
 });

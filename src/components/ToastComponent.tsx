@@ -1,12 +1,9 @@
 import { Snackbar } from "react-native-paper";
-
-export function ToastComponent({
-  visible,
-  onDismiss,
-}: {
+interface ToastComponentProps {
   visible: boolean;
   onDismiss: () => void;
-}) {
+}
+export function ToastComponent({ visible, onDismiss }: ToastComponentProps) {
   return (
     <Snackbar
       visible={visible}
