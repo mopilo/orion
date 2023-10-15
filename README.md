@@ -16,7 +16,7 @@ This project is built with expo; to run the project ensure you have the followin
 
   - npx expo start
 
-  If you are using an emulator/simulator, you may find the following Expo CLI keyboard shortcuts to be useful to open the app on any of the following platforms:
+    If you are using an emulator/simulator, you may find the following Expo CLI keyboard shortcuts to be useful to open the app on any of the following platforms:
 
     Pressing a will open in an Android Emulator or connected device.
     Pressing i will open in an iOS Simulator.
