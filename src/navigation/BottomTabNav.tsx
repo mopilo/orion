@@ -9,11 +9,20 @@ const Tab = createBottomTabNavigator();
 const BottomTabNav = () => {
 
   return (
-    <Tab.Navigator initialRouteName="Post" backBehavior="initialRoute" screenOptions={{headerShown: false}}>
+    <Tab.Navigator
+      initialRouteName="Post"
+      backBehavior="initialRoute"
+      screenOptions={{ headerShown: false }}
+    >
       {BottomTabData.map(({ title, icon, id, component }) => (
         <Tab.Screen
           key={id}
           name={title}
+          listeners={{
+            tabPress: (e) => {
+              e.preventDefault(); // <-- this function blocks navigating to screen
+            },
+          }}
           component={component}
           options={{
             tabBarIcon: ({ color }) => (

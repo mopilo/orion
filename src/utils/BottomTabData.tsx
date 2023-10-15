@@ -1,23 +1,23 @@
-import AccountScreen from "../screens/AccountScreen";
+import PostScreen from "../screens/PostScreen";
 
 export const BottomTabData = [
   {
     id: 1,
     title: "Feed",
     icon: "rss",
-    component: AccountScreen,
+    component: PostScreen,
   },
   {
     id: 2,
     title: "Post",
     icon: "loupe",
-    component: AccountScreen,
+    component: PostScreen,
   },
   {
     id: 3,
     title: "Account",
     icon: "account",
-    component: AccountScreen,
+    component: PostScreen,
   },
 ];
 
